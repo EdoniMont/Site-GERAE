@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerae.com.br</title>
+    <link rel="icon" href="LogoGERAEsimples.jpg">
+</head>
+<style>
+/* ======== IMPORTAÇÃO DE FONTES DO GOOGLE ======== */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Cor de fundo geral e tamanho base da fonte */
+body {
+    font-size: 100%;
+    background-color: #DCEEF2;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    justify-content: space-around;
+    font-family: "Exo", sans-serif;
+    height: 150px;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo da esquerda */
+.imagem-cabeçalho1 {
+    height: 65px;
+    width: 300px;
+}
+
+/* Logo da direita */
+.imagem-cabeçalho2 {
+    height: 60px;
+    width: 200px;
+    background-color: transparent;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+.container-navegação {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #ede6dd;
+  padding: 20px;
+
+}
+
+/* Camada de fundo do menu */
+.bloco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Barra com os botões */
+.navegação {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Botões do menu */
+.titulo-1 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.titulo-1:hover {
+    text-decoration: underline;
+}
+
+/* ======== IMAGEM DE TOPO ======== */
+.container-imagem1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Imagem de fundo */
+.fundo {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0.3;
+  position: relative; /* fica dentro do fluxo */
+  z-index: 1; /* camada de trás */
+}
+
+
+/* Caixa de textos por cima da imagem */
+.container-textos {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+  max-width: 2000px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Título principal */
+.texto1 {
+  color: black;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Subtítulo */
+.texto2 {
+  color: black;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Frase complementar */
+.texto3 {
+  color: black;
+  font-size: 85px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+/* SECÃO UM */
+.container-Um{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60px 40px;
+  gap: 30px;
+}
+
+
+.textoUm{
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 600px;
+  font-size: 27px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+.imagem-ccbeu{
+  width: 470px;
+  height: 370px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+
+.bloco-onda1 {
+  position: relative;
+  background: #fff;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+
+.bloco-onda1::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background:#ede6dd;
+  border-radius: 100% 100% 0 0;
+}
+
+.onda {
+  transform: rotate(180deg);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bloco-onda2::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background:#ede6dd;
+  border-radius: 100% 100% 0 0;
+}
+
+/* SEÇÃO DOIS*/
+.container-fila {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 0px 40px;
+  gap: 50px;
+}
+.container-mento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 30px 40px;
+  gap: 50px;
+}
+/* TÍTULO DO PROJETO */
+.container-titulo-filamento {
+    background: #ede6dd;
+    padding: 60px 0px 20px 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-titulo-filamento h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    margin: 0;
+}
+
+.textofila,
+.textomento p {
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 600px;
+  font-size: 27px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.imagem-fila,
+.imagem-mento {
+  width: 470px;
+  height: 370px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+/* ALTERANDO A ORDEM DA FOTO */
+.imagem-mento {
+  flex-direction: row-reverse;
+}
+
+
+/* SEÇÃO TRES*/
+.container-virtual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 0px 40px;
+  gap: 50px;
+}
+.container-oculos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 30px 40px;
+  gap: 50px;
+}
+/* TÍTULO DO PROJETO */
+.container-titulo-virtual {
+    background: #ede6dd;
+    padding: 60px 0px 20px 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-titulo-virtual h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: black;
+    margin: 0;
+}
+
+.textovirtual,
+.textooculos p {
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 700px;
+  font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.imagem-virtual,
+.imagem-oculos {
+  width: 470px;
+  height: 390px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+/* ALTERANDO A ORDEM DA FOTO */
+.imagem-oculos {
+  flex-direction: row-reverse;
+}
+
+
+/* SEÇÃO QUATRO*/
+.container-pipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 0px 40px;
+  gap: 50px;
+}
+.container-hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 30px 40px;
+  gap: 50px;
+}
+/* TÍTULO DO PROJETO */
+.container-titulo-pipe {
+    background: #ede6dd;
+    padding: 60px 0px 20px 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-titulo-pipe h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: black;
+    margin: 0;
+}
+
+.textopipe,
+.textohero p {
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 700px;
+  font-size: 25px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.imagem-pipe,
+.imagem-hero {
+  width: 470px;
+  height: 390px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+/* ALTERANDO A ORDEM DA FOTO */
+.imagem-hero {
+  flex-direction: row-reverse;
+}
+
+
+
+/* SEGUNDA ONDA */
+.bloco-onda2 {
+  position: relative;
+  background: #ede6dd;
+  padding: 0;
+  overflow: hidden;
+  height: 180px; 
+  margin-top: -1px; 
+}
+
+.bloco-onda2 svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ /* FALE CONOSCO */
+.fale-conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.fale-conosco-container {
+  background-color: #d9d3d3;
+  border-radius: 70px;
+  text-align: center;
+  padding: 40px 40px;
+  width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.fale-logo {
+  width: 70px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 220px; /* "corta" a parte de cima */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white; /* evita que o fundo cinza apareça atrás */
+  border-radius: 50%; /* caso a logo seja circular */
+  padding: 5px;
+}
+
+.fale-conosco h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+}
+
+.fale-conosco p {
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.botao-fale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-fale:hover {
+  background-color: #222;
+}
+
+.link-icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.fale-conosco small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ======== PARCEIROS ======== */
+.parceiro {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.parceiro-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  gap: 40px;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1;
+}
+
+.parceiro-img svg {
+  width: 250px;
+  height: auto;
+}
+
+.parceiro-texto h3 {
+   font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.parceiro-texto h2 {
+  font-size: 40px;
+  font-weight: 950;
+  margin: 0 0 15px;
+  color: black;
+}
+
+.parceiro-texto p {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.botao-parceiro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdb8b8;
+  color: #f4f4f4;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 35px;
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* ======== RODAPÉ ======== */
+.footer {
+  background-color: #d8d2d1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+   font-family: 'Poppins', sans-serif;
+}
+
+.footer-contatos h2 {
+  font-size: 40px;
+  font-weight: 950;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-contatos p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-creditos p {
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.icon {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-creditos {
+  text-align: right;
+  font-size: 14px;
+  color:black;
+}
+
+.footer-creditos span {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+}
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #e0e0e0;   /* botão cinza */
+  cursor: pointer;
+
+  display: none;
+  z-index: 9999;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .2s ease;
+}
+
+#btnTopo:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+/*  RESPONSIVIDADE NOTEBOOK E PC  */
+/* ======== AJUSTES PARA TELAS GRANDES (≥1400px) ======== */
+@media screen and (min-width: 1400px) {
+  /* Melhor centralização do banner */
+  .container-textos {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* opcional, se quiser centralizado */
+    width: auto;
+    max-width: 90%;
+  }
+  .texto1 {
+    font-size: 120px; /* aumenta proporcionalmente */
+  }
+
+  /* Imagens responsivas – crescem sem distorcer */
+  .imagem-ccbeu,
+  .imagem-fila,
+  .imagem-mento,
+  .imagem-virtual,
+  .imagem-oculos,
+  .imagem-pipe,
+  .imagem-hero {
+    width: auto;
+    max-width: 600px; /* limite opcional */
+    height: auto;
+    aspect-ratio: 4/3; /* mantém a proporção original */
+  }
+
+  /* Texto das seções mais largo para telas grandes */
+  .textoUm,
+  .textofila p,
+  .textomento p,
+  .textovirtual,
+  .textooculos p,
+  .textopipe,
+  .textohero p {
+    max-width: 800px;
+    font-size: 28px; /* levemente maior */
+  }
+
+  /* Ajuste da logo flutuante */
+  .fale-logo {
+    top: 180px; /* valor calculado para alinhar com o container */
+    width: 80px; /* um pouco maior */
+  }
+
+  /* Aumenta o container "Fale Conosco" proporcionalmente */
+  .fale-conosco-container {
+    max-width: 900px;
+    padding: 50px 60px;
+  }
+
+  /* Parceiros – mais espaçamento */
+  .parceiro-container {
+    max-width: 1200px;
+    gap: 60px;
+  }
+
+  /* Rodapé – alinha melhor os contatos */
+  .footer-container {
+    max-width: 1200px;
+  }
+}
+
+/* Ajuste extra para telas muito grandes (≥1800px) */
+@media screen and (min-width: 1800px) {
+  .container-textos {
+    max-width: 1400px;
+  }
+  .texto1 {
+    font-size: 150px;
+  }
+  .container-Um,
+  .container-fila,
+  .container-mento,
+  .container-virtual,
+  .container-oculos,
+  .container-pipe,
+  .container-hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="imagem-cabeçalho1" src="LogoGERAEPNG.png" alt="Logo GERAE" id="gerae-inicial">
+        <img class="imagem-cabeçalho2" src="Logo-IFPA-Horizontal.png" alt="Logo IFPA">
+    </header>
+
+    <div class="container-navegação">
+        <div class="bloco1"></div>
+        <div class="navegação">
+            <a href="index.html" class="titulo-1">INÍCIO</a>
+            <a href="integrantes.html" class="titulo-1">INTEGRANTES</a>
+            <a href="ensino.html" class="titulo-1">ENSINO</a>
+            <a href="pesquisa.html" class="titulo-1">PESQUISA</a>
+            <a href="extensão.html" class="titulo-1">EXTENSÃO</a>
+        </div>
+    </div>
+
+    <div class="container-imagem1">
+        <img class="fundo" src="pesquisa.jpg" alt="imagem de fundo">
+
+        <div class="container-textos">
+            <div class="texto1">PESQUISA</div>
+        </div>
+    </div> 
+
+    <!-- SEÇÃO UM -->
+    <div class="container-Um">
+        <div class="textoUm">
+            <p>No eixo de Pesquisa, o GERAE se dedica ao estudo e à soluções inovadoras em robótica e tecnologia. Incentivamos a curiosidade científica por meio de análises, experimentações, desenvolvimento de projetos e produção de conhecimento, promovendo o aprofundamento técnico e o compartilhamento de resultados entre os integrantes.</p>
+        </div>
+        <img class="imagem-ccbeu" src="ccbeu.jpg" alt="earth no ccbeu">
+    </div>
+
+
+
+<div class="bloco-onda1">
+  <svg class="onda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+    <path fill="#ede6dd" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,170.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L0,0Z"></path>
+  </svg> 
+</div>
+
+
+ <!-- TÍTULO DO PROJETO -->
+<div class="container-titulo-filamento">
+    <h1>MÁQUINA DE FILAMENTO SUSTENTÁVEL</h1>
+</div>
+<!-- SEÇÃO DOIS -->
+    <div class="container-fila">
+        <div class="textofila">
+            <p> O projeto tem como objetivo o desenvolvimento de uma máquina de filamento para impressão 3D a partir da reciclagem de garrafas PET, promovendo o reaproveitamento de resíduos plásticos como matéria-prima. 
+</p>
+        </div>
+        <img class="imagem-fila" src="fila.jpg" alt="imagem filamento">
+    </div>
+    <div class="container-mento">
+      <img class="imagem-mento" src="mento.png" alt="imagem filamento 2"> 
+        <div class="textomento">
+            <p>A proposta consiste na construção de um sistema capaz de transformar o plástico de garrafa PET em filamento utilizável em impressoras 3D. Dessa forma, o projeto propõe uma solução acessível e sustentável, contribuindo para a redução do descarte inadequado de plásticos e para a disseminação do uso da manufatura aditiva.</p>
+        </div>
+    </div> 
+    <!-- TÍTULO DO PROJETO -->
+<div class="container-titulo-virtual">
+    <h1>ÓCULOS DE REALIDADE VIRTUAL</h1>
+</div>
+<!-- SEÇÃO TRES -->
+    <div class="container-virtual">
+        <div class="textovirtual">
+            <p> A equipe tem como iniciativa promover uma experiência em Realidade Virtual que proporciona ao público o contato direto com ambientes digitais imersivos. A ação busca apresentar essa tecnologia de forma acessível, estimulando a exploração e a compreensão de suas diferentes aplicações. Além disso, a experiência contribui para despertar o interesse por tecnologias imersivas e inovação, ampliando o conhecimento dos participantes sobre novas formas de interação digital.</p>
+        </div>
+        <img class="imagem-virtual" src="virtual.png" alt="imagem virtual">
+    </div>
+    <div class="container-oculos">
+      <img class="imagem-oculos" src="oculos.png" alt="imagem oculos"> 
+        <div class="textooculos">
+            <p>O grupo possui ações e propostas em desenvolvimento voltadas à ampliação e ao aprimoramento dessa experiência, com foco na disseminação do conhecimento tecnológico. Essas iniciativas reforçam o compromisso do GERAE com a aprendizagem prática, promovendo a vivência direta da Realidade Virtual como ferramenta de exploração, inovação e formação tecnológica.</p>
+        </div>
+    </div> 
+
+      <!-- TÍTULO DO PROJETO -->
+<div class="container-titulo-pipe">
+    <h1>ÓCULOS DE REALIDADE VIRTUAL</h1>
+</div>
+    <!-- SEÇÃO QUATRO-->
+    <div class="container-pipe">
+        <div class="textopipe">
+            <p> O Pipe-Hero é um robô desenvolvido para atuação em tubulações de esgoto, com o objetivo de auxiliar na inspeção e análise desses ambientes de difícil acesso. A solução busca contribuir para a identificação de obstruções, falhas estruturais e condições internas das tubulações, promovendo maior eficiência e segurança nos processos de monitoramento.</p>
+        </div>
+        <img class="imagem-pipe" src="pipe.png" alt="imagem pipe-hero">
+    </div>
+    <div class="container-hero">
+      <img class="imagem-hero" src="hero.png" alt="imagem pipe-hero dois"> 
+        <div class="textohero">
+            <p>Sua estrutura é feita por meio de impressão 3D, possibilitando um equipamento leve e de baixo custo. O robô conta ainda com uma câmera para monitoramento interno das tubulações, permitindo a visualização e análise das condições do ambiente. Dessa forma, o desenvolvimento do Pipe-Hero reforça o compromisso do grupo com a aplicação da robótica em soluções tecnológicas voltadas a desafios reais.</p>
+        </div>
+    </div> 
+
+    <div class="bloco-onda1">
+
+   <!-- Substitua o SVG atual por este: -->
+<div class="bloco-onda2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+    <path fill="#fff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,180L0,180Z"></path>
+  </svg>
+</div>
+        <!-- FALE CONOSCO -->
+    <section class="fale-conosco">
+        <div class="fale-conosco-container">
+            <h2><strong>FALE CONOSCO</strong></h2>
+            <img src="logoredonda.png" alt="logoredonda.png" class="fale-logo">
+            <p> <strong> Se você deseja solicitar os serviços do GERAE, é<br> simples: basta realizar o registro oficial pelo <br> formulário. Acesse o link abaixo e prontinho! <strong> </p>
+            <a href="https://seulink.com/formulario" class="botao-fale">
+                <i class="link-icon">🔗</i> Clique aqui
+            </a>
+            <small>*Os dados serão transferidos para o site em até 5 dias.</small>
+        </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiro">
+        <div class="parceiro-container">
+            <div class="parceiro-img">
+                <img src="comunidade.png" alt="Comunidade">
+            </div>
+            <div class="parceiro-texto">
+                <h3><strong>Gostaria de patrocinar ou apoiar a equipe?</strong></h3>
+                <h2><strong>SEJA UM PARCEIRO! </strong></h2>
+                <p>Acreditamos que a inovação e a educação transformam futuros.
+                    Buscamos parceiros que queiram caminhar conosco nessa missão.
+                    <br>Ao patrocinar ou apoiar o GERAE, você contribui diretamente para o crescimento da equipe, viabilizando projetos, oficinas e iniciativas que impactam positivamente nossa comunidade.<br>
+                    Seu apoio pode ser financeiro, por doações ou parcerias estratégicas.<br> Quer fazer parte dessa jornada? Entre em contato e descubra como apoiar nossa equipe.
+                </p>
+                <a class="botao-parceiro">
+                    <i class="link-icon">🔗</i> Em construção
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contatos -->
+            <div class="footer-contatos">
+                <h2><stronhg>CONTATOS</stronhg></h2>
+                <div class="contato-item">
+                    <img src="emai.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br> gerae.belem@ifpa.edu.br</strong></p>
+                </div>
+                <div class="contato-item">
+                    <img src="insta.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <a href="https://www.instagram.com/roboticagerae?igsh=Y3FhdjUwcnRwNjRm" style="color: black; text-decoration: none;">roboticagerae</a>
+                </div>
+                <div class="contato-item">
+                   <img src="tel.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br>GERAE</strong></p>
+                </div>
+            </div>
+
+            <!-- Créditos -->
+            <div class="footer-creditos">
+                <p><span>Idealização e Coordenação:</span><br><strong>Rejane Barros</strong></p>
+                <p><span>Design:</span><br><strong>Thaís Sousa</strong></p>
+                <p><span>Desenvolvimento e Programação:</span><br><strong>Edoni Monteiro e Leticia Pinheiro</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="btnTopo">
+  <svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M6 15l6-6 6 6" 
+          stroke="#000" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+  </svg>
+</button>
+
+
+</body>
+</html>
