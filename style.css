@@ -1,0 +1,1657 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 100%;
+    background-color: #DCEEF2;
+}
+
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    justify-content: space-around;
+    font-family: "Exo", sans-serif;
+    height: 150px;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo da esquerda */
+.imagem-cabeçalho1 {
+    height: 65px;
+    width: 300px;
+}
+
+/* Logo da direita */
+.imagem-cabeçalho2 {
+    height: 60px;
+    width: 200px;
+    background-color: transparent;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+.container-navegação {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #ede6dd;
+  padding: 20px;
+
+}
+
+/* Camada de fundo do menu */
+.bloco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Barra com os botões */
+.navegação {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.bloco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.navegação {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espaço entre os links */
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+/* Botões do menu */
+.titulo-1 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.titulo-1:hover {
+    text-decoration: underline;
+}
+
+
+
+.container-imagem1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imagem1 {
+  width: 100%;
+  height: 550px; /* altura fixa - altere conforme necessário */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0.3;
+}
+
+.container-textos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* ESPAÇAMENTO ENTRE OS TEXTOS - altere este valor */
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  font-family:"Poppins", sans-serif;
+}
+
+.texto1 {
+  color: black;
+  font-size: 55px; /* Tamanho maior para o título */
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.texto1-2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.texto1-3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* Versão responsiva */
+@media (max-width: 768px) {
+  .container-textos {
+    gap: 20px;
+    width: 95%;
+  }
+  
+  .texto1 {
+    font-size: 36px;
+  }
+  
+  .texto1-2 {
+    font-size: 18px;
+  }
+  
+  .texto1-3 {
+    font-size: 16px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-textos {
+    gap: 15px;
+  }
+  
+  .texto1 {
+    font-size: 28px;
+  }
+  
+  .texto1-2 {
+    font-size: 16px;
+  }
+  
+  .texto1-3 {
+    font-size: 14px;
+  }
+}
+
+
+.bloco-separação1{
+    background-color: 	#ede6dd;
+    width: auto;
+    height: 60px;
+}
+
+.container-sobre{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: 	#ede6dd;
+    width: auto;
+    height: 400px;
+    animation: slideIn2 1s ease-out; /* Duração de 1 segundo */
+    gap: 60px;
+   
+}
+
+.texto2{
+    display: block;
+    color: BLACK;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+      width: 100%;
+  max-width: 1200px;      /* limite em telas grandes */
+  margin: 0 auto;         /* centraliza */
+  padding: 0 40px;        /* 👈 ISSO impede grudar na borda */
+    
+}
+
+.texto-gerae1{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 34px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+.texto-gerae2{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 20px;
+
+    position: relative;
+}
+
+.imagem-gerae{
+    width: 460px;
+    height: 380px;
+    border-radius: 50px;
+
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+
+
+
+/* =========================
+   BLOCO GERAL
+========================= */
+.bloco-carrossel {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ede6dd;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.bloco-carrossel .int:hover {
+  background: #6a4c2f;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.bloco-carrossel .int {
+    display: inline-block;   /* ← ISSO RESOLVE */
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.bloco-carrossel p.subtitulo {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-top: -25px;
+}
+
+/* =========================
+   ESTRUTURA DO CARROSSEL
+========================= */
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Faixa que contém as páginas */
+.carrossel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ===== NOVO: PÁGINAS ===== */
+/* ===== PÁGINAS ===== */
+.pagina {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    gap: 0px;
+
+    /* NOVO */
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    position: absolute;
+}
+
+.pagina.ativa {
+    transform: translateX(0);
+    position: relative;
+}
+
+.pagina.anterior {
+    transform: translateX(-100%);
+}
+
+/* =========================
+   ITENS (3 POR PÁGINA)
+========================= */
+
+.carrossel-item {
+    flex: 0 0 calc(100% / 3);
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.carrossel-item:hover {
+    transform: scale(1.03);
+}
+
+/* Card interno */
+.block {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 310px;
+    margin: 0 auto;
+}
+
+/* Imagem do integrante */
+.block img {
+    width: 220px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Textos */
+p.nome {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+p.função {
+  font-size: 15px;
+  color: grey;
+}
+
+/* Item vazio da página 2 */
+.vazio {
+  visibility: hidden;
+}
+
+/* =========================
+   SETAS
+========================= */
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s;
+    padding: 10px;
+    z-index: 10;
+}
+
+.arrow:hover {
+    color: #555;
+}
+
+.arrow.left {
+    position: absolute;
+    left: 0;
+}
+
+.arrow.right {
+    position: absolute;
+    right: 0;
+}
+
+  
+
+.bloco-separação2{
+    background-color: 	#ede6dd;
+    width: auto;
+    height: 60px;
+}
+
+
+.bloco-onda1 {
+  position: relative;
+  background: #fff;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.bloco-onda1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50%;
+  height: 50px;
+  background: #ede6dd;
+  border-radius: 50% 50% 0 0; /* cria a curva */
+}
+
+.bloco-onda2 {
+  position: relative;
+  background: #fff;
+  padding: 0px 0px;
+  overflow: hidden;
+   margin-bottom: -5px;   /* 🔐 ESSENCIAL */
+
+}
+
+.bloco-onda2::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #ede6dd;
+
+}
+
+
+
+
+
+
+.conteudo {
+  text-align: center;
+  margin-top: -50px;
+  
+}
+
+.conteudo h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 670;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+
+.menu-projetos{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  gap: 6px;
+}
+
+/* 👉 puxa a vírgula para grudar no Ensino */
+.menu-projetos span:first-of-type {
+  margin-left: -8px;
+}
+
+.menu-projetos a {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+
+
+.menu-projetos a:hover {
+  background: #6a4c2f;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+.imagem-projetos {
+  width: 140px;          /* tamanho fixo inicial */
+  margin: 0 15px;        /* espaçamento lateral */
+  vertical-align: middle;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .imagem-projetos {
+    width: 90px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-projetos {
+    width: 70px;
+    margin: 8px;
+  }
+}
+
+
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* quebra em telas menores */
+  padding: 40px 20px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícone no topo como imagem */
+.card-icon {
+  width: 60px;        /* tamanho do ícone */
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.card img:last-child {
+  width: 80%;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+
+
+.mais{
+  justify-content: center;
+  text-align: center;
+  background-color: WHITE;
+  margin-top: -28px;
+  
+}
+
+.mais p{
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.mais button{
+  border: none;            /* remove a borda */
+  outline: none;           /* remove contorno ao clicar */
+  background: #4a4a4a;     /* cor de fundo do botão */
+  color: #fff;             /* cor do texto */
+  width: 250px;
+  height: 68px;
+  border-radius: 30px;     /* deixa arredondado */
+  font-size: 30px;
+  cursor: pointer; 
+  box-shadow: 2px 2px 10px rgba(160, 149, 149, 0.1);
+  margin-top: 10px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background: #333;        /* cor mais escura no hover */
+}
+
+
+
+
+
+
+/* SEÇÃO PRINCIPAL */
+.palestras {
+  background-color: #ede6dd;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titulo-palestras h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* GRID DE CARDS */
+.cards-palestras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ESTILO DE CADA CARD */
+.card-palestra {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-palestra:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-palestra h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-palestra p {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* IMAGEM DO CARD */
+.card-palestra img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: auto;
+}
+
+/* BOTÃO "VER MAIS" */
+.botao-card {
+  display: block;
+  text-align: center;
+  background-color: #3a3a3a;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 8px 0;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-card:hover {
+  background-color: #5a5a5a;
+}
+
+
+
+
+
+/* ======== FALE CONOSCO ======== */
+.fale-conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.fale-conosco-container {
+  background-color: #d9d3d3;
+  border-radius: 70px;
+  text-align: center;
+  padding: 40px 40px;
+  width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.fale-logo {
+  width: 80px;
+  display: block;
+  margin: -65px auto 15px auto;
+border: 6px solid white;
+border-radius: 50%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+}
+
+
+.fale-conosco h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+
+}
+
+.fale-conosco p {
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.botao-fale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-fale:hover {
+  background-color: #222;
+}
+
+.link-icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.fale-conosco small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ======== PARCEIROS ======== */
+.parceiro {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.parceiro-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  gap: 40px;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1;
+}
+
+.parceiro-img svg {
+  width: 250px;
+  height: auto;
+}
+
+.parceiro-texto h3 {
+   font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.parceiro-texto h2 {
+  font-size: 40px;
+  font-weight: 950;
+  margin: 0 0 15px;
+  color: black;
+  margin-bottom: 10px;   /* espaço só entre os DOIS blocos */
+  line-height: 1.5;
+}
+
+.parceiro-texto p {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  hyphens: auto;        /* permite hifenização */
+  word-spacing: 1px;
+ 
+}
+
+.botao-parceiro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdb8b8;
+  color: #f4f4f4;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 35px;
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* ======== RODAPÉ ======== */
+.footer {
+  background-color: #d8d2d1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+   font-family: 'Poppins', sans-serif;
+}
+
+.footer-contatos h2 {
+  font-size: 40px;
+  font-weight: 950;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-contatos p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-creditos p {
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.icon {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-creditos {
+  text-align: right;
+  font-size: 14px;
+  color:black;
+}
+
+.footer-creditos span {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+}
+
+
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #e0e0e0;   /* botão cinza */
+  cursor: pointer;
+
+  display: none;
+  z-index: 9999;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .2s ease;
+}
+
+#btnTopo:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 479px) {
+
+  .texto1 { font-size: 28px; }
+  .texto1-2 { font-size: 14px; }
+
+  .imagem1 {
+    height: 380px;
+  }
+
+  .carrossel-item {
+    flex: 0 0 100%;
+  }
+
+  .block {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .block img {
+    width: 160px;
+    height: 180px;
+  }
+
+  .menu-projetos {
+    font-size: 18px;
+  }
+
+  .fale-conosco h2 {
+    font-size: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .texto1 { font-size: 34px; }
+  .texto1-2 { font-size: 16px; }
+  .texto1-3 { font-size: 15px; }
+
+  .container-sobre {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .imagem-gerae {
+    width: 300px;
+    height: 260px;
+  }
+
+  /* CARROSSEL 1 */
+  .carrossel-item {
+    flex: 0 0 100%;
+  }
+
+  .block {
+    width: 90%;
+  }
+
+  .cards-palestras {
+    grid-template-columns: 1fr;
+  }
+
+  .fale-conosco-container {
+    width: 90%;
+    border-radius: 40px;
+  }
+
+  .botao-fale {
+    font-size: 1.2em;
+  }
+
+  
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .container-sobre {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .texto2 {
+    padding: 0 20px;
+  }
+
+  .imagem-gerae {
+    width: 440px;
+    height: 400px;
+  }
+
+  /* ======== CARROSSEL AJUSTADO ======== */
+
+  /* título */
+  .bloco-carrossel .int {
+    font-size: 35px;
+  }
+
+
+
+  /* exibe 2 por vez com espaço confortável */
+  .carrossel-item {
+    flex: 0 30%;
+    margin: 0 4px;
+  }
+
+  /* card menor e mais leve */
+  .block {
+    width: 230px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  /* imagem reduzida */
+  .block img {
+    width: 150px;
+    height: 180px;
+    margin-top: 5px;
+  }
+
+  /* textos internos menores */
+  p.nome {
+    font-size: 20px;
+  }
+
+  p.função {
+    font-size: 15px;
+  }
+
+  /* setas um pouco menores */
+  .arrow {
+    font-size: 26px;
+  }
+
+  /* ===== OUTRAS PARTES ===== */
+
+  .menu-projetos {
+    font-size: 30px;
+  }
+
+  .cards-palestras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    flex-direction:row;
+    text-align: center;
+
+  }
+}
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+  .texto1 { font-size: 48px; }
+  .texto1-2 { font-size: 20px; }
+
+.container-sobre {
+  gap: 30px;
+  padding: 60px 20px 20px 20px;   /* ← topo maior */
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =====================
+     AJUSTE GLOBAL
+  ====================== */
+  body {
+    font-size: 110%;
+    background-color: #ede6dd;
+  }
+
+  /* =====================
+     HERO (CAPA)
+  ====================== */
+  .container-imagem1 {
+  background-color: rgb(211, 226, 226); /* ou a cor original que você usava */
+}
+
+  .imagem1 {
+    height: 650px;
+  }
+
+  .container-textos {
+    max-width: 1100px;
+  }
+
+  .texto1 {
+    font-size: 70px;
+  }
+
+  .texto1-2 {
+    font-size: 26px;
+  }
+
+  .texto1-3 {
+    font-size: 22px;
+    max-width: 750px;
+  }
+
+  /* =====================
+     SOBRE A EQUIPE
+  ====================== */
+ .secao-sobre {
+  background-color: #ede6dd;
+}
+
+.container-sobre {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+
+  /* =====================
+     CARROSSEL (FOCO!)
+  ====================== */
+  .bloco-carrossel .int {
+    font-size: 35px;
+  }
+
+  .bloco-carrossel p.subtitulo {
+    font-size: 15px;
+  }
+
+  .carrossel-container {
+    max-width: 1400px;
+  }
+
+.carrossel-item {
+  flex: 0.03 0 auto;
+}
+
+.carrossel-track {
+  gap: 15px;
+}
+
+
+
+  .block {
+    width: 300px;
+    padding: 50px;
+  }
+
+  .block img {
+    width: 210px;
+    height: 240px;
+  }
+
+  p.nome {
+    font-size: 22px;
+  }
+
+  p.função {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 36px;
+  }
+
+  /* =====================
+     PROJETOS / LOGOS
+  ====================== */
+  .conteudo h1 {
+    font-size: 39px;
+  }
+
+  .conteudo h2 {
+    font-size: 28px;
+  }
+
+  .imagem-projetos {
+    width: 180px;
+  }
+
+  /* =====================
+     CARDS ENSINO / PESQUISA / EXTENSÃO
+  ====================== */
+  .card {
+    width: 340px;
+    padding: 30px;
+  }
+
+  .card h3 {
+    font-size: 34px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  /* =====================
+     PALESTRAS
+  ====================== */
+  .titulo-palestras h2 {
+    font-size: 40px;
+  }
+
+  .card-palestra h3 {
+    font-size: 22px;
+  }
+
+  .card-palestra p {
+    font-size: 16px;
+  }
+
+  .card-palestra img {
+    height: 200px;
+  }
+
+  /* =====================
+     FALE CONOSCO
+  ====================== */
+  .fale-conosco-container {
+    width: 720px;
+  }
+
+  .fale-conosco h2 {
+    font-size: 2.6em;
+  }
+
+  .fale-conosco p {
+    font-size: 17px;
+  }
+
+  .botao-fale {
+    font-size: 1.8em;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 1301px) and (max-width: 2000px) {
+
+  /* =====================
+     AJUSTE GLOBAL
+  ====================== */
+  body {
+    font-size: 110%;
+    background-color: #ede6dd;
+  }
+
+  /* =====================
+     HERO (CAPA)
+  ====================== */
+  .container-imagem1 {
+  background-color: rgb(211, 226, 226); /* ou a cor original que você usava */
+}
+
+  .imagem1 {
+    height: 650px;
+  }
+
+  .container-textos {
+    max-width: 1100px;
+  }
+
+  .texto1 {
+    font-size: 70px;
+  }
+
+  .texto1-2 {
+    font-size: 26px;
+  }
+
+  .texto1-3 {
+    font-size: 22px;
+    max-width: 750px;
+  }
+
+  /* =====================
+     SOBRE A EQUIPE
+  ====================== */
+ .secao-sobre {
+  background-color: #ede6dd;
+}
+
+.container-sobre {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+
+  .texto2 {
+    max-width: 900px;
+    font-size: 18px;
+  }
+
+  .texto-gerae1 {
+    font-size: 42px;
+  }
+
+  .texto-gerae2 {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .imagem-gerae {
+    width: 520px;
+    height: 420px;
+  }
+
+
+  .int{
+    font-size: 40px;
+  }
+
+  /* =====================
+     CARROSSEL (FOCO!)
+  ====================== */
+  .bloco-carrossel .int {
+    font-size: 42px;
+  }
+
+  .bloco-carrossel p.subtitulo {
+    font-size: 18px;
+  }
+
+  .carrossel-container {
+    max-width: 1400px;
+  }
+
+.carrossel-item {
+  flex: 0 0 auto;
+}
+
+.carrossel-track {
+  gap: 15px;
+}
+
+
+
+  .block {
+    width: 340px;
+    padding: 50px;
+  }
+
+  .block img {
+    width: 230px;
+    height: 260px;
+  }
+
+  p.nome {
+    font-size: 28px;
+  }
+
+  p.função {
+    font-size: 17px;
+  }
+
+  .arrow {
+    font-size: 44px;
+  }
+
+  /* =====================
+     PROJETOS / LOGOS
+  ====================== */
+  .conteudo h1 {
+    font-size: 42px;
+  }
+
+  .conteudo h2 {
+    font-size: 30px;
+  }
+
+  .imagem-projetos {
+    width: 180px;
+  }
+
+  /* =====================
+     CARDS ENSINO / PESQUISA / EXTENSÃO
+  ====================== */
+
+
+  .card {
+    width: 340px;
+    padding: 30px;
+  }
+
+  .card h3 {
+    font-size: 34px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  /* =====================
+     PALESTRAS
+  ====================== */
+  .titulo-palestras h2 {
+    font-size: 40px;
+  }
+
+  .card-palestra h3 {
+    font-size: 22px;
+  }
+
+  .card-palestra p {
+    font-size: 16px;
+  }
+
+  .card-palestra img {
+    height: 200px;
+  }
+
+  /* =====================
+     FALE CONOSCO
+  ====================== */
+  .fale-conosco-container {
+    width: 720px;
+  }
+
+  .fale-conosco h2 {
+    font-size: 2.6em;
+  }
+
+  .fale-conosco p {
+    font-size: 17px;
+  }
+
+  .botao-fale {
+    font-size: 1.8em;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
