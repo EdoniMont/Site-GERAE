@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerae.com.br</title>
+    <link rel="icon" href="LogoGERAEsimples.jpg">
+</head>
+<style>
+/* ======== IMPORTAÇÃO DE FONTES DO GOOGLE ======== */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Cor de fundo geral e tamanho base da fonte */
+body {
+    font-size: 100%;
+    background-color: #DCEEF2;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    justify-content: space-around;
+    font-family: "Exo", sans-serif;
+    height: 150px;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo da esquerda */
+.imagem-cabeçalho1 {
+    height: 65px;
+    width: 300px;
+}
+
+/* Logo da direita */
+.imagem-cabeçalho2 {
+    height: 60px;
+    width: 200px;
+    background-color: transparent;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+.container-navegação {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #ede6dd;
+  padding: 20px;
+
+}
+
+/* Camada de fundo do menu */
+.bloco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Barra com os botões */
+.navegação {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Botões do menu */
+.titulo-1 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.titulo-1:hover {
+    text-decoration: underline;
+}
+
+/* ======== IMAGEM DE TOPO ======== */
+.container-imagem1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Imagem de fundo */
+.fundo {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0.3;
+  position: relative; /* fica dentro do fluxo */
+  z-index: 1; /* camada de trás */
+}
+
+
+/* Caixa de textos por cima da imagem */
+.container-textos {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+  max-width: 2000px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Título principal */
+.texto1 {
+  color: black;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Subtítulo */
+.texto2 {
+  color: black;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Frase complementar */
+.texto3 {
+  color: black;
+  font-size: 85px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.container-Um{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60px 40px;
+  gap: 30px;
+}
+
+
+/* Textos das seções */
+.textoUm{
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 600px;
+  font-size: 27px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+.textoDois h1{
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 800px;
+  font-size: 30px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+
+/* Imagens das seções */
+.imagem-auditorio{
+  width: 470px;
+  height: 370px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+
+.bloco-onda1 {
+  position: relative;
+  background: #fff;
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.onda {
+  transform: rotate(180deg);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bloco-onda1::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background:#EDE6DD;
+  border-radius: 100% 100% 0 0;
+}
+.container-Dois {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background:#f1eae1;
+  padding: 60px 40px;
+  gap: 30px;
+}
+
+.textoDois p{
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 1100px;
+  font-size: 30px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.textoDois h2{
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 1000px;
+  font-size: 50px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/* SEÇÃO REVISTA - COM GRID */
+.container-revista {
+  display: grid;
+  grid-template-columns: repeat(3, 293px); /* 3 colunas fixas de 293px */
+  gap: 30px; /* espaço entre os itens */
+  justify-content: center; /* centraliza o grid horizontalmente */
+  background: #f1eae1;
+  padding: 40px;
+}
+
+.item-revista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit; /* Herda a cor do texto do pai */
+}
+
+/* Container da imagem para posicionar o overlay */
+.container-imagem {
+  position: relative;
+  width: 293px;
+  height: 400px;
+  border-radius: 30px;
+  overflow: hidden; /* Para que o overlay não ultrapasse a borda arredondada */
+}
+
+.imagem-revista {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Efeito de zoom opcional */
+}
+
+/* Overlay que aparece ao passar o mouse */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 30px;
+}
+
+/* Texto "Saiba mais" dentro do overlay */
+.saiba-mais {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efeito hover: mostra o overlay e, opcionalmente, dá um zoom na imagem */
+.item-revista:hover .overlay {
+  opacity: 1;
+}
+
+.item-revista:hover .imagem-revista {
+  transform: scale(1.05); /* Leve zoom na imagem ao passar o mouse */
+}
+
+.item-revista p {
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* Para telas médias (ex: tablets) */
+@media (max-width: 1000px) {
+  .container-revista {
+    grid-template-columns: repeat(2, 293px); /* 2 colunas */
+  }
+}
+
+/* Para telas pequenas (ex: celulares) */
+@media (max-width: 650px) {
+  .container-revista {
+    grid-template-columns: repeat(1, 293px); /* 1 coluna */
+  }
+}
+
+.container-fut,
+.container-futebol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ede6dd;
+  padding: 60px 40px;
+  gap: 50px;
+}
+.textofut h1 {
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 600px;
+  font-size: 50px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.textofut,
+.textofutebol p {
+  flex: 1;
+  color: BLACK;
+  text-align: justify;
+  max-width: 600px;
+  font-size: 27px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.imagem-fut,
+.imagem-futebol {
+  width: 470px;
+  height: 370px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+/* ALTERANDO A ORDEM DA FOTO */
+.imagem-futebol {
+  flex-direction: row-reverse;
+}
+
+/* SEGUNDA ONDA */
+.bloco-onda2 {
+  position: relative;
+  background: #ede6dd;
+  padding: 0;
+  overflow: hidden;
+  height: 180px; 
+  margin-top: -1px; 
+}
+
+.bloco-onda2 svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* ======== FALE CONOSCO ======== */
+.fale-conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.fale-conosco-container {
+  background-color: #d9d3d3;
+  border-radius: 70px;
+  text-align: center;
+  padding: 40px 40px;
+  width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.fale-logo {
+  width: 80px;
+  display: block;
+  margin: -65px auto 15px auto;
+border: 6px solid white;
+border-radius: 50%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+}
+
+
+.fale-conosco h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+
+}
+
+.fale-conosco p {
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.botao-fale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-fale:hover {
+  background-color: #222;
+}
+
+.link-icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.fale-conosco small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ======== PARCEIROS ======== */
+.parceiro {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.parceiro-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  gap: 40px;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1;
+}
+
+.parceiro-img svg {
+  width: 250px;
+  height: auto;
+}
+
+.parceiro-texto h3 {
+   font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.parceiro-texto h2 {
+  font-size: 40px;
+  font-weight: 950;
+  margin: 0 0 15px;
+  color: black;
+}
+
+.parceiro-texto p {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  hyphens: auto;        /* permite hifenização */
+  word-spacing: 1px;
+ } 
+
+.botao-parceiro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdb8b8;
+  color: #f4f4f4;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 35px;
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* ======== RODAPÉ ======== */
+.footer {
+  background-color: #d8d2d1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+   font-family: 'Poppins', sans-serif;
+}
+
+.footer-contatos h2 {
+  font-size: 40px;
+  font-weight: 950;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-contatos p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-creditos p {
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.icon {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-creditos {
+  text-align: right;
+  font-size: 14px;
+  color:black;
+}
+
+.footer-creditos span {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+}
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #e0e0e0;   /* botão cinza */
+  cursor: pointer;
+
+  display: none;
+  z-index: 9999;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .2s ease;
+}
+
+#btnTopo:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+/*  RESPONSIVIDADE NOTEBOOK E PC  */
+
+/* Telas médias (notebooks ) */
+@media (max-width: 1366px) {
+  /* Cabeçalho */
+
+
+  /* Banner principal */
+  .container-imagem1 {
+    height: 500px;
+  }
+  .fundo {
+    height: 500px;
+  }
+  .container-textos {
+    left: 30%; /* mantém alinhamento original */
+    max-width: 90%;
+  }
+  .texto1 {
+    font-size: 80px;
+  }
+
+  /* Seções de conteúdo */
+  .container-Um,
+  .container-Dois,
+  .container-fut,
+  .container-futebol {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .textoUm {
+    font-size: 22px;
+    max-width: 500px;
+  }
+
+  .textoDois h2 {
+    font-size: 40px;
+  }
+  .textoDois p {
+    font-size: 24px;
+    max-width: 900px;
+  }
+
+  .textofut h1 {
+    font-size: 40px;
+  }
+  .textofut p,
+  .textofutebol p {
+    font-size: 22px;
+  }
+
+  .imagem-auditorio,
+  .imagem-futebol {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* Ajustes na revista */
+  .container-revista {
+    gap: 20px;
+  }
+  .item-revista p {
+    font-size: 20px;
+  }
+
+  /* Fale conosco */
+  .fale-conosco-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+  .fale-conosco h2 {
+    font-size: 48px;
+  }
+  .fale-conosco p {
+    font-size: 18px;
+  }
+  .botao-fale {
+    font-size: 1.3em;
+    padding: 8px 30px;
+  }
+
+  /* Parceiros */
+  .parceiro-container {
+    gap: 30px;
+    max-width: 90%;
+  }
+  .parceiro-img svg {
+    width: 200px;
+  }
+  .parceiro-texto h2 {
+    font-size: 32px;
+  }
+  .parceiro-texto p {
+    font-size: 14px;
+  }
+
+  /* Rodapé */
+
+  .footer-contatos,
+  .footer-creditos {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-creditos {
+    margin-top: 20px;
+  }
+  .contato-item {
+    justify-content: center;
+  }
+}
+
+/* Telas grandes (PC acima de 1366px até 1920px) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .container-textos {
+    max-width: 1400px;
+  }
+  .texto1 {
+    font-size: 110px;
+  }
+  .textoDois h2 {
+    font-size: 55px;
+  }
+  .textoDois p {
+    font-size: 32px;
+  }
+  .textofut h1 {
+    font-size: 55px;
+  }
+  .textofut p,
+  .textofutebol p {
+    font-size: 28px;
+  }
+  .container-Um,
+  .container-Dois,
+  .container-fut,
+  .container-futebol {
+    padding: 80px 60px;
+  }
+}
+
+/* Telas muito largas (acima de 1920px) */
+@media (min-width: 1921px) {
+  .container-textos {
+    max-width: 1800px;
+  }
+  .texto1 {
+    font-size: 130px;
+  }
+  .textoDois h2 {
+    font-size: 70px;
+  }
+  .textoDois p {
+    font-size: 40px;
+    max-width: 1400px;
+  }
+  .textofut h1 {
+    font-size: 70px;
+  }
+  .textofut p,
+  .textofutebol p {
+    font-size: 36px;
+  }
+  .container-Um,
+  .container-Dois,
+  .container-fut,
+  .container-futebol {
+    padding: 100px 80px;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="imagem-cabeçalho1" src="LogoGERAEPNG.png" alt="Logo GERAE" id="gerae-inicial">
+        <img class="imagem-cabeçalho2" src="Logo-IFPA-Horizontal.png" alt="Logo IFPA">
+    </header>
+
+    <div class="container-navegação">
+        <div class="bloco1"></div>
+        <div class="navegação">
+            <a href="index.html" class="titulo-1">INÍCIO</a>
+            <a href="integrantes.html" class="titulo-1">INTEGRANTES</a>
+            <a href="ensino.html" class="titulo-1">ENSINO</a>
+            <a href="pesquisa.html" class="titulo-1">PESQUISA</a>
+            <a href="extensão.html" class="titulo-1">EXTENSÃO</a>
+        </div>
+    </div>
+
+    <div class="container-imagem1">
+        <img class="fundo" src="ensino.png" alt="imagem de fundo">
+
+        <div class="container-textos">
+            <div class="texto1">ENSINO</div>
+        </div>
+    </div> 
+
+    <!-- SEÇÃO 1 -->
+    <div class="container-Um">
+        <div class="textoUm">
+            <p>Aqui, o GERAE cria ambientes de aprendizado colaborativo, onde todos podem se desenvolver e ensinar uns aos outros. Promovemos capacitações, materiais de estudo, encontros de aprendizado e momentos de troca de experiências.</p>
+        </div>
+        <img class="imagem-auditorio" src="fotoauditorio.JPG" alt="Auditório GERAE">
+    </div>
+
+<div class="bloco-onda1">
+  <svg class="onda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+    <path fill="#f3ece4" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,170.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L0,0Z"></path>
+  </svg> 
+</div>
+
+<!-- SEÇÃO 2 -->
+    <div class="container-Dois">
+        <div class="textoDois">
+            <h2> <strong>Revistas Educacionais</strong></h2>
+            
+            <p>O grupo desenvolve edições de revistas educacionais para democratizar o acesso ao conhecimento e aproximar ainda mais a comunidade de temas ligados à tecnologia e inovação. Essas revistas já contam com diversas edições e abordam assuntos importantes de forma simples, ilustrada e acessível, permitindo que pessoas de diferentes idades e níveis de conhecimento aprendam sobre robótica de maneira leve e inspiradora.</p>
+        </div>
+    </div>
+
+  <div class="container-revista">
+    <!-- Revista 1 -->
+    <a href="https://tr.ee/QkH2bwr9nS" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="um.png" alt="revista um">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>1º Edição <br> Como Aprender Robótica</strong></p>
+    </a>
+    
+    <!-- Revista 2 -->
+    <a href="https://tr.ee/NOXX7WGekh" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="dois.jpg" alt="revista dois">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>2º Edição <br> Robótica Sustentável</strong></p>
+    </a>
+    
+    <!-- Revista 3 -->
+    <a href="https://tr.ee/zvxlKvOI0V" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="tres.jpg" alt="revista tres">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>3º Edição <br> Robótica Educacional</strong></p>
+    </a>
+    
+    <!-- Revista 4 -->
+    <a href="https://tr.ee/JPZiuMZlBH" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="quatro.jpg" alt="revista quatro">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>4º Edição <br> Pet Robótica e Maker Camp</strong></p>
+    </a>
+    
+    <!-- Revista 5 -->
+    <a href="https://tr.ee/gu7Lb2UcaB" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="cinco.png" alt="revista cinco">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>5º Edição <br> Robótica Assistiva</strong></p>
+    </a>
+    
+    <!-- Revista 6 -->
+    <a href="https://www.canva.com/design/DAGh6UGNO-4/U7qwio9o61qwPB3KnXWFNA/view?utm_content=DAGh6UGNO-4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h41fadf6692" class="item-revista">
+        <div class="container-imagem">
+            <img class="imagem-revista" src="seis.png" alt="revista seis">
+            <div class="overlay">
+                <span class="saiba-mais">Saiba mais</span>
+            </div>
+        </div>
+        <p><strong>6º Edição <br> Mulheres na robótica</strong></p>
+    </a>
+</div>
+
+<!-- SEÇÃO 4 -->
+    <div class="container-fut">
+        <div class="textofut">
+            <h1><strong>FULTEBOL DE ROBÔS</strong></h1>
+            <p> A equipe tem como iniciativa promover e incentivar o desenvolvimento de habilidades tecnológicas por meio da prática da robótica. O projeto envolve a construção, programação e operação de pequenos robôs jogadores, que competem em partidas de futebol dentro de um campeonato realizado no 
+IFPA – Campus Belém.</p>
+        </div>
+        <img class="imagem-auditorio" src="fut.jpeg" alt="imagem fut">
+    </div>
+
+    <!-- SEÇÃO 5 -->
+    <div class="container-futebol">
+      <img class="imagem-futebol" src="Group.png" alt="imagem futebol"> 
+        <div class="textofutebol">
+            <p>Na primeira edição, o GERAE participou da etapa regional do TechCamp, onde conquistou o terceiro lugar na competição. Esse resultado reforça o potencial do projeto e o comprometimento do grupo em desenvolver soluções criativas e acessíveis, incentivando cada vez mais estudantes a explorarem a área da robótica.</p>
+        </div>
+    </div>
+
+    <div class="bloco-onda1">
+
+   <!-- Substitua o SVG atual por este: -->
+<div class="bloco-onda2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+    <path fill="#fff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,180L0,180Z"></path>
+  </svg>
+</div>
+ 
+    <!-- FALE CONOSCO -->
+    <section class="fale-conosco">
+        <div class="fale-conosco-container">
+           
+            <img src="logoredonda.png" alt="logoredonda.png" class="fale-logo">
+             <h2><strong>FALE CONOSCO</strong></h2>
+            <p> <strong> Se você deseja solicitar os serviços do GERAE, é<br> simples: basta realizar o registro oficial pelo <br> formulário. Acesse o link abaixo e prontinho! <strong> </p>
+            <a href="https://seulink.com/formulario" class="botao-fale">
+                <i class="link-icon">🔗</i> Clique aqui
+            </a>
+            <small>*Os dados serão transferidos para o site em até 5 dias.</small>
+        </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiro">
+        <div class="parceiro-container">
+            <div class="parceiro-img">
+                <img src="comunidade.png" alt="Comunidade">
+            </div>
+  <div class="parceiro-texto">
+    <h3><strong>Gostaria de patrocinar ou apoiar a equipe?</strong></h3>
+
+    <h2><strong>SEJA UM PARCEIRO!</strong></h2>
+
+    <p>
+        Acreditamos que a inovação e a educação transformam futuros.
+        Por isso, buscamos parceiros que queiram caminhar conosco nessa missão.
+        <br>Ao patrocinar ou apoiar o GERAE, você contribui diretamente para o crescimento da equipe,
+        viabilizando projetos, oficinas e iniciativas que impactam positivamente nossa comunidade.<br>
+
+        
+    </p>
+
+    <p>
+        Seu apoio pode ser em forma de patrocínio financeiro, doações ou parcerias estratégicas.
+        <br>
+        Quer fazer parte dessa jornada? Entre em contato e descubra como apoiar nossa equipe.
+    </p>
+
+    <a class="botao-parceiro">
+        <i class="link-icon">🔗</i> Em construção
+    </a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contatos -->
+            <div class="footer-contatos">
+                <h2><stronhg>CONTATOS</stronhg></h2>
+                <div class="contato-item">
+                    <img src="emai.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br> gerae.belem@ifpa.edu.br</strong></p>
+                </div>
+                <div class="contato-item">
+                    <img src="insta.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <a href="https://www.instagram.com/roboticagerae?igsh=Y3FhdjUwcnRwNjRm" style="color: black; text-decoration: none;">roboticagerae</a>
+                </div>
+                <div class="contato-item">
+                   <img src="tel.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br>GERAE</strong></p>
+                </div>
+            </div>
+
+            <!-- Créditos -->
+            <div class="footer-creditos">
+                <p><span>Idealização e Coordenação:</span><br><strong>Rejane Barros</strong></p>
+                <p><span>Design:</span><br><strong>Thaís Sousa</strong></p>
+                <p><span>Desenvolvimento e Programação:</span><br><strong>Edoni Monteiro e Leticia Pinheiro</strong></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+    <button id="btnTopo">
+  <svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M6 15l6-6 6 6" 
+          stroke="#000" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+  </svg>
+</button>
+
+
+</body>
+</html>

@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerae.com.br</title>
+    <link rel="icon" href="LogoGERAEsimples.jpg">
+</head>
+<style>
+/* ======== IMPORTAÇÃO DE FONTES DO GOOGLE ======== */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Cor de fundo geral e tamanho base da fonte */
+body {
+    font-size: 100%;
+    background-color: #DCEEF2;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    justify-content: space-around;
+    font-family: "Exo", sans-serif;
+    height: 150px;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+
+
+
+/* Logo da esquerda */
+.imagem-cabeçalho1 {
+    height: 65px;
+    width: 300px;
+}
+
+/* Logo da direita */
+.imagem-cabeçalho2 {
+    height: 60px;
+    width: 200px;
+    background-color: transparent;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+.container-navegação {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #ede6dd;
+  padding: 20px;
+
+}
+
+
+
+
+
+/* Camada de fundo do menu */
+.bloco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Barra com os botões */
+.navegação {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Botões do menu */
+.titulo-1 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efeito ao passar o mouse */
+.titulo-1:hover {
+    text-decoration: underline;
+}
+
+/* ======== IMAGEM DE TOPO ======== */
+.container-imagem1 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Imagem de fundo */
+.fundo {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 1.3;
+  position: relative; /* fica dentro do fluxo */
+  z-index: 1; /* camada de trás */
+}
+
+
+/* Caixa de textos por cima da imagem */
+.container-textos {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+  max-width: 2000px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Título principal */
+.texto1 {
+  color: black;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+.container-Um{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60px 80px;
+  gap: 50px;
+
+}
+
+
+/* Textos das seções */
+.textoUm{
+
+  color: BLACK;
+  text-align: justify;
+  max-width: 700px;
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+
+
+
+/* Imagens das seções */
+.imagem-auditorio{
+  width: 450px;
+  height: 350px;
+  border-radius: 90px 0px 90px 0px ;
+  box-shadow: 20px 20px 0px #ffffff;
+  object-fit: cover;
+}
+
+
+.onda {
+    transform: rotate(180deg);
+    width: 100%;
+    height: auto;
+    display: block; /* Garante que não haja espaço de texto embaixo */
+    margin-bottom: -1px; /* "Overlap" de 1px para garantir que as cores se cruzem */
+}
+
+.bloco-onda1 {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    line-height: 0; /* Remove qualquer espaço de fonte residual */
+    font-size: 0;
+}
+
+/* SEGUNDA ONDA - AJUSTADA */
+.bloco-onda2 {
+    position: relative;
+    background: #ede6dd; /* Mesma cor da seção PET/EARTH acima */
+    line-height: 0;
+    font-size: 0;
+    width: 100%;
+    height: auto; /* Deixa o SVG definir a altura */
+    display: block;
+}
+
+.bloco-onda2 svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative; /* Mudamos de absolute para relative */
+    margin-bottom: -1px; /* Empurra o SVG 1px para baixo para selar com a div branca */
+    shape-rendering: geometricPrecision;
+}
+
+
+
+
+
+
+/* SEGUNDA ONDA */
+.bloco-onda2 {
+  position: relative;
+  background: #ede6dd;
+  overflow: hidden;
+  height: 180px; 
+  display: block;
+}
+
+.bloco-onda2 svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180;
+  display: block;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-Dois {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background:#ede6dd;
+  padding: 60px 80px;
+  gap: 30px;
+}
+
+.textoDois p{
+  color: BLACK;
+  text-align: justify;
+  max-width: 1200px;
+  font-size: 23px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+.textoDois h2{
+
+  color: BLACK;
+  text-align: justify;
+  max-width: 1200px;
+  font-size: 40px;
+ font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+/* CONTAINER DAS IMAGENS CORRIGIDO */
+.container-imagem-pet {
+    background: #ede6dd;
+    padding: 0 20px 80px 20px; /* Padding fixo nas laterais para não grudar no celular */
+    display: flex;
+    justify-content: center;   /* ISSO centraliza as imagens no meio da tela */
+    gap: 40px;
+    width: 100%;               /* Garante que o container ocupe a largura toda */
+}
+
+/* IMAGENS (Ajuste leve para não quebrar em telas menores) */
+.container-imagem-pet img {
+    width: 100%;               /* Permite que a imagem seja flexível */
+    max-width: 400px;          /* Mas nunca passe de 470px (o tamanho que você quer) */
+    height: 340px;
+    border-radius: 90px 0px 90px 0px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.secao-pet {
+    background: #ede6dd;
+    padding: 0px 80px;
+}
+
+/* TEXTO SUPERIOR CENTRAL */
+.texto-topo {
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* centraliza corretamente */
+    text-align: justify;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* BLOCO INFERIOR */
+.conteudo-pet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* TEXTO ESQUERDA */
+.texto-esquerda {
+    flex: 1; /* ocupa todo o espaço disponível */
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* IMAGENS DIREITA */
+.imagens-direita {
+    width: 360px; /* largura fixa real */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.imagens-direita img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 90px 0px 90px 0px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+.secao-pet-modelo2 {
+    background: #ede6dd;
+    padding: 60px 80px;
+}
+
+/* CONTAINER CONTROLADO EM 1200px */
+.container-modelo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* IMAGEM ESQUERDA */
+.imagem-modelo2 {
+    width: 430px; /* largura fixa real */
+    flex-shrink: 0; /* impede de encolher */
+}
+
+.imagem-modelo2 img {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 90px 0px 90px 0px;
+    box-shadow: -20px 20px 0px #ffffff;
+}
+
+/* TEXTO DIREITA */
+.texto-modelo2 {
+    flex: 1; /* ocupa todo espaço restante */
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+.btn-saber { 
+    display: inline-flex;    /* Faz o link respeitar as margens e paddings */
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;        /* Espaço para não ficar grudado no texto acima */
+    padding: 14px 45px; 
+    border: none; 
+    border-radius: 40px; 
+    background: #6f6f6f; 
+    color: #fff; 
+    font-size: 18px; 
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;   /* Remove sublinhado */
+    cursor: pointer; 
+    transition: 0.3s; 
+} 
+
+.btn-saber:hover { 
+    background: #555; 
+}
+
+
+
+
+
+
+
+
+
+.secao-earth {
+    background: #ede6dd;
+    padding: 0px 80px;
+}
+
+/* TÍTULO LIMITADO A 1200px */
+.titulo-earth {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+.titulo-earth h2 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #000;
+}
+
+/* CONTAINER PRINCIPAL CONTROLADO */
+.container-earth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* TEXTO */
+.texto-earth {
+    flex: 1; /* ocupa o espaço restante */
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-earth p {
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* IMAGEM */
+.imagem-earth {
+    width: 300px;   /* largura fixa real */
+    flex-shrink: 0; /* impede encolher */
+}
+
+.imagem-earth img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0px 90px 0px 90px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secao-resultados {
+    background: #ede6dd;
+    padding: 60px 80px;
+}
+
+/* CONTAINER LIMITADO */
+.bloco-resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* COLUNA IMAGENS */
+.coluna-fotos-resultados {
+    width: 330px;        /* largura fixa real */
+    flex-shrink: 0;      /* impede encolher */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.coluna-fotos-resultados img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+     border-radius: 0px 90px 0px 90px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+/* COLUNA TEXTO */
+.coluna-texto-resultados {
+    flex: 1;  /* ocupa o restante */
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+.secao-impacto {
+    background: #ede6dd;
+    padding: 30px 80px;
+}
+
+/* CONTAINER LIMITADO */
+.container-impacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* TEXTO */
+.texto-impacto {
+    flex: 1;
+
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* IMAGEM */
+.imagem-impacto {
+    width: 400px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+}
+
+.imagem-impacto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 90px 0px 90px 0px;
+    box-shadow: -20px 20px 0px #ffffff;
+}
+
+/* BOTÃO IMPACTO (EARTH) */ 
+.btn-impacto { 
+    display: inline-flex;    /* Importante para o posicionamento */
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;        /* Espaço para não ficar grudado no texto acima */
+    padding: 14px 45px; 
+    border: none; 
+    border-radius: 40px;
+    background: #6f6f6f;
+    color: #fff; 
+    font-size: 18px; 
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;   /* Remove sublinhado */
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.btn-impacto:hover {
+    background: #555; 
+}
+
+
+
+
+
+
+
+/* ======== FALE CONOSCO ======== */
+.fale-conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.fale-conosco-container {
+  background-color: #d9d3d3;
+  border-radius: 70px;
+  text-align: center;
+  padding: 40px 40px;
+  width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.fale-logo {
+  width: 80px;
+  display: block;
+  margin: -65px auto 15px auto;
+border: 6px solid white;
+border-radius: 50%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+}
+
+
+.fale-conosco h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+
+}
+
+.fale-conosco p {
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.botao-fale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-fale:hover {
+  background-color: #222;
+}
+
+.link-icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.fale-conosco small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ======== PARCEIROS ======== */
+.parceiro {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.parceiro-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  gap: 40px;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1;
+}
+
+.parceiro-img svg {
+  width: 250px;
+  height: auto;
+}
+
+.parceiro-texto h3 {
+   font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.parceiro-texto h2 {
+  font-size: 40px;
+  font-weight: 950;
+  margin: 0 0 15px;
+  color: black;
+}
+
+.parceiro-texto p {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  hyphens: auto;        /* permite hifenização */
+  word-spacing: 1px;
+ } 
+
+.botao-parceiro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdb8b8;
+  color: #f4f4f4;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 10px 35px;
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* ======== RODAPÉ ======== */
+.footer {
+  background-color: #d8d2d1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+   font-family: 'Poppins', sans-serif;
+}
+
+.footer-contatos h2 {
+  font-size: 40px;
+  font-weight: 950;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-contatos p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+.footer-creditos p {
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.icon {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-creditos {
+  text-align: right;
+  font-size: 14px;
+  color:black;
+}
+
+.footer-creditos span {
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+}
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #e0e0e0;   /* botão cinza */
+  cursor: pointer;
+
+  display: none;
+  z-index: 9999;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .2s ease;
+}
+
+#btnTopo:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+
+
+.bloco{
+    width: auto;
+    height: 60px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+/* ========================================= */
+/* TELAS MAIORES QUE 1024px */
+/* ========================================= */
+@media (min-width: 1070px) {
+
+  /* Containers principais mais largos */
+  .container-Um,
+  .container-Dois,
+  .secao-pet,
+  .secao-pet-modelo2,
+  .secao-earth,
+  .secao-resultados,
+  .secao-impacto {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  /* Textos levemente maiores */
+  .textoUm,
+  .textoDois p,
+  .texto-topo {
+    font-size: 22px;
+  }
+
+
+  .texto-esquerda,
+  .texto-modelo2,
+  .texto-earth p,
+  .coluna-texto-resultados,
+  .texto-impacto {
+    font-size: 20px;
+  }
+
+
+
+  /* Títulos maiores */
+  .textoDois h2,
+  .titulo-earth h2 {
+    font-size: 44px;
+  }
+
+  /* Imagens um pouco maiores */
+  .imagem-auditorio {
+    width: 500px;
+    height: 380px;
+  }
+
+  .imagem-modelo2 {
+    width: 460px;
+  }
+
+  .imagem-modelo2 img {
+    height: 520px;
+  }
+
+  .imagem-earth {
+    width: 360px;
+  }
+
+  .imagem-earth img {
+    height: 320px;
+  }
+
+  .imagem-impacto {
+    width: 450px;
+  }
+
+  .imagem-impacto img {
+    height: 480px;
+  }
+
+  /* COLUNA IMAGENS */
+.coluna-fotos-resultados {
+    width: 270px;        /* largura fixa real */
+    flex-shrink: 0;      /* impede encolher */
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.coluna-fotos-resultados img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0px 90px 0px 90px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+
+  
+
+  /* Gaps mais equilibrados */
+  .container-earth,
+  .container-modelo2,
+  .container-impacto,
+  .bloco-resultados,
+  .conteudo-pet {
+    gap: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* TELAS MAIORES QUE 1200px */
+/* ========================================= */
+@media (min-width: 1200px) {
+
+  /* Mais espaço lateral */
+  .container-Um,
+  .container-Dois,
+  .secao-pet,
+  .secao-pet-modelo2,
+  .secao-earth,
+  .secao-resultados,
+  .secao-impacto {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  /* Fonte maior e mais confortável */
+  .textoUm,
+  .textoDois p,
+  .texto-topo {
+    font-size: 23px;
+    line-height: 1.7;
+  }
+
+   
+  .texto-esquerda,
+  .texto-modelo2,
+  .texto-earth p,
+  .coluna-texto-resultados,
+  .texto-impacto {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+
+  /* Títulos maiores */
+  .textoDois h2,
+  .titulo-earth h2 {
+    font-size: 48px;
+  }
+
+  /* Imagens maiores */
+  .imagem-auditorio {
+    width: 550px;
+    height: 420px;
+  }
+
+  .imagem-modelo2 {
+    width: 500px;
+  }
+
+  .imagem-modelo2 img {
+    height: 560px;
+  }
+
+  .imagem-earth {
+    width: 400px;
+  }
+
+  .imagem-earth img {
+    height: 400px;
+  }
+
+  .imagem-impacto {
+    width: 500px;
+  }
+
+  .imagem-impacto img {
+    height: 520px;
+  }
+
+  /* Layout mais espaçado */
+  .container-earth,
+  .container-modelo2,
+  .container-impacto,
+  .bloco-resultados,
+  .conteudo-pet {
+    gap: 90px;
+  }
+}
+
+
+
+
+
+/* ========================================= */
+/* TELAS MAIORES QUE 1400px */
+/* ========================================= */
+@media (min-width: 1400px) {
+
+  /* Containers principais */
+  .container-Um,
+  .container-Dois,
+  .secao-pet,
+  .secao-pet-modelo2,
+  .secao-earth,
+  .secao-resultados,
+  .secao-impacto {
+    /* aumenta área útil */
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  /* Textos mais confortáveis */
+  .textoUm,
+  .textoDois p,
+  .texto-topo {
+    font-size: 27px;
+    line-height: 1.8;
+  }
+
+
+  .texto-esquerda,
+  .texto-modelo2,
+  .texto-earth p,
+  .coluna-texto-resultados,
+  .texto-impacto {
+    font-size: 25px;
+    line-height: 1.8;
+  }
+
+  /* Títulos maiores */
+  .textoDois h2,
+  .titulo-earth h2 {
+    font-size: 52px;
+  }
+
+  /* Ajuste de espaçamento entre blocos */
+  .container-earth,
+  .container-modelo2,
+  .container-impacto,
+  .bloco-resultados,
+  .conteudo-pet {
+    gap: 90px;
+  }
+
+  /* Imagens maiores e proporcionais */
+  .imagem-auditorio {
+    width: 600px;
+    height: 450px;
+  }
+
+  .imagem-modelo2 {
+    width: 540px;
+  }
+
+  .imagem-modelo2 img {
+    height: 620px;
+  }
+
+  .imagem-earth {
+    width: 450px;
+  }
+
+  .imagem-earth img {
+    height: 650px;
+  }
+
+  .imagem-impacto {
+    width: 550px;
+  }
+
+  .imagem-impacto img {
+    height: 600px;
+  }
+
+  /* CONTAINER DAS IMAGENS CORRIGIDO */
+.container-imagem-pet {
+    background: #ede6dd;
+    padding: 0 20px 80px 20px; /* Padding fixo nas laterais para não grudar no celular */
+    display: flex;
+    justify-content: center;   /* ISSO centraliza as imagens no meio da tela */
+    gap: 40px;
+    width: 100%;               /* Garante que o container ocupe a largura toda */
+}
+
+/* IMAGENS (Ajuste leve para não quebrar em telas menores) */
+.container-imagem-pet img {
+    width: 100%;               /* Permite que a imagem seja flexível */
+    max-width: 450px;          /* Mas nunca passe de 470px (o tamanho que você quer) */
+    height: 390px;
+    border-radius: 90px 0px 90px 0px;
+    object-fit: cover;
+}
+
+
+/* IMAGENS DIREITA */
+.imagens-direita {
+    width: 400px; /* largura fixa real */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.imagens-direita img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 90px 0px 90px 0px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+
+/* COLUNA IMAGENS */
+.coluna-fotos-resultados {
+    width: 370px;        /* largura fixa real */
+    flex-shrink: 0;      /* impede encolher */
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.coluna-fotos-resultados img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 0px 90px 0px 90px;
+    box-shadow: 20px 20px 0px #ffffff;
+}
+
+
+  .fale-conosco-container {
+    width: 720px;
+  }
+
+  .fale-conosco h2 {
+    font-size: 2.6em;
+  }
+
+  .fale-conosco p {
+    font-size: 17px;
+  }
+
+  .botao-fale {
+    font-size: 1.8em;
+  }
+
+
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="imagem-cabeçalho1" src="LogoGERAEPNG.png" alt="Logo GERAE" id="gerae-inicial">
+        <img class="imagem-cabeçalho2" src="Logo-IFPA-Horizontal.png" alt="Logo IFPA">
+    </header>
+
+    <div class="container-navegação">
+        <div class="bloco1"></div>
+        <div class="navegação">
+            <a href="index.html" class="titulo-1">INÍCIO</a>
+            <a href="integrantes.html" class="titulo-1">INTEGRANTES</a>
+            <a href="ensino.html" class="titulo-1">ENSINO</a>
+            <a href="pesquisa.html" class="titulo-1">PESQUISA</a>
+            <a href="extensão.html" class="titulo-1">EXTENSÃO</a>
+        </div>
+    </div>
+
+    <div class="container-imagem1">
+        <img class="fundo" src="imagem1.png" alt="imagem de fundo">
+
+        <div class="container-textos">
+            <div class="texto1">EXTENSÃO</div>
+        </div>
+    </div> 
+
+    <!-- SEÇÃO 1 -->
+    <div class="container-Um">
+        <div class="textoUm">
+            <p>Os projetos de extensão têm como objetivo promover a disseminação do conhecimento em tecnologia, robótica e automação, fortalecendo a integração entre ensino, pesquisa e sociedade. As ações extensionistas do grupo buscam tornar o acesso à educação tecnológica mais inclusivo, didático e conectado às demandas sociais e educacionais.</p>
+        </div>
+        <img class="imagem-auditorio" src="imagem2.png" alt="Auditório GERAE">
+    </div>
+
+<div class="bloco-onda1">
+  <svg class="onda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+    <path fill="#ede6dd" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,170.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L0,0Z"></path>
+  </svg> 
+</div>
+
+<!-- SEÇÃO 2 -->
+    <div class="container-Dois">
+        <div class="textoDois">
+            <h2> <strong>PET ROBÓTICA</strong></h2>
+            
+            <p>O projeto PET teve como foco a promoção da educação tecnológica em escolas públicas do Pará, especialmente na Amazônia paraense. Buscou fortalecer a iniciação científico-tecnológica e o protagonismo de estudantes do 6º ao 9º ano por meio da robótica educacional e da cultura maker. Utilizou metodologias ativas, com destaque para a abordagem STEAM. As ações envolveram palestras, formações e projetos piloto em escolas de Belém, Benevides, Ananindeua e Vigia. As oficinas ocorreram no espaço maker do CCBEU e no IFPA Campus Belém. O projeto visou desenvolver o pensamento lógico, crítico e interdisciplinar dos estudantes.</p>
+        </div>
+    </div>
+
+
+    <div class="container-imagem-pet">
+     <img class="imagem-pet1" src="imagem3.png" alt="imagem fut">
+     <img class="imagem-pet2" src="imagem4.png" alt="imagem fut">
+    </div>
+  
+ <section class="secao-pet">
+
+    <!-- TEXTO CENTRAL SUPERIOR -->
+    <div class="texto-topo">
+        <p>
+           O PET Robótica foi uma iniciativa de extensão voltada à integração entre ensino, pesquisa e sociedade, atuando diretamente na educação básica pública. Seu principal propósito foi inserir a robótica educacional como ferramenta pedagógica para estimular o pensamento científico, a autonomia e o compromisso social dos estudantes, além de capacitar professores e fomentar a criação de grupos de estudos em robótica nas escolas parceiras.
+        </p>
+    </div>
+
+    <!-- BLOCO INFERIOR -->
+    <div class="conteudo-pet">
+
+        <!-- TEXTO ESQUERDA -->
+        <div class="texto-esquerda">
+            <p>
+                Nesse contexto, o projeto apresentou resultados expressivos em âmbito local e nacional, consolidando-se como uma iniciativa de referência na promoção da educação tecnológica. 
+            </p>
+
+            <p>
+                Entre seus feitos, destaca-se a participação na 3ª Semana Nacional de Educação Profissional e Tecnológica, realizada em Brasília–DF, no período de 16 a 22 de outubro de 2023, bem como no II Encontro Nacional de Inovação e Empreendedorismo na Educação Profissional e Tecnológica, ocorrido de 07 a 09 de maio de 2024.
+            </p>
+
+            <p>
+                Nesta ocasião, a coordenação do projeto foi convidada a apresentar o PET Robótica no Workshop de Iniciação Tecnológica: Experiências Exitosas, em virtude do reconhecimento do projeto como uma iniciativa de sucesso em avaliação de âmbito nacional pela coordenação dos Projetos de Iniciação Tecnológica.
+            </p>
+
+        </div>
+
+        <!-- IMAGENS DIREITA -->
+        <div class="imagens-direita">
+            <img src="imagem5.png" alt="imagem 1">
+            <img src="imagem6.png" alt="imagem 2">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="secao-pet-modelo2">
+
+    <div class="container-modelo2">
+
+        <!-- IMAGEM ESQUERDA -->
+        <div class="imagem-modelo2">
+            <img src="imagem7.png" alt="Projeto PET">
+        </div>
+
+        <!-- TEXTO DIREITA -->
+        <div class="texto-modelo2">
+            <p>
+                Além disso, o projeto obteve destaque em matéria veiculada pela TV Liberal,
+                abordando tecnologia e letramento digital, ampliando sua visibilidade e impacto social.
+                Ao longo de sua execução, o PET Robótica beneficiou diretamente mais de 600 alunos(as),
+                promovendo o acesso aos fundamentos da educação tecnológica e da robótica educacional.
+            </p>
+
+            <p>
+                Para conhecer mais detalhes sobre as ações desenvolvidas, os resultados alcançados e
+                os impactos gerados pelo projeto, acesse o site oficial do Projeto PET Robótica.
+            </p>
+
+           <a href="https://sites.google.com/ifpa.edu.br/petroboticagerae/p%C3%A1gina-inicial" target="_blank" rel="noopener" class="btn-saber">
+    Saber Mais
+</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="secao-earth">
+
+    <!-- TÍTULO SEPARADO -->
+    <div class="titulo-earth">
+        <h2>EARTH</h2>
+    </div>
+
+    <!-- BLOCO TEXTO + IMAGEM -->
+    <div class="container-earth">
+
+        <div class="texto-earth">
+            <p>
+               O Projeto de Extensão EARTH (Electronic Art and Recycling for a Thriving Habitat – Arte Eletrônica e Reciclagem para um Hábitat Próspero), tem como objetivo sensibilizar os estudantes e a comunidade acadêmica para a construção de uma consciência ambiental crítica, aliando sustentabilidade, tecnologia e criatividade.  
+            </p>
+
+            <p>
+              A proposta do projeto fundamenta-se no reaproveitamento de resíduos eletrônicos gerados no IFPA Campus Belém, que passam a ser utilizados como insumos para a criação de artefatos artísticos, projetos robóticos e outras soluções tecnológicas, promovendo o descarte responsável e o uso consciente dos recursos. 
+            </p>
+
+        </div>
+
+        <div class="imagem-earth">
+            <img src="imagem8.png" alt="Projeto EARTH">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="secao-resultados">
+
+    <div class="bloco-resultados">
+
+        <!-- IMAGENS ESQUERDA -->
+        <div class="coluna-fotos-resultados">
+            <img src="imagem9.png" alt="">
+            <img src="imagem10.png" alt="">
+        </div>
+
+        <!-- TEXTO DIREITA -->
+        <div class="coluna-texto-resultados">
+            <p>
+               Como resultados, foram desenvolvidos dois recursos pedagógicos funcionais a partir de resíduos eletrônicos: um piano eletrônico com Arduino, construído com componentes reaproveitados e estrutura adaptada, e um mapa-múndi artístico, elaborado com sucata eletrônica e materiais reutilizados. Além de promover a consciência ambiental, os artefatos ampliaram as possibilidades pedagógicas nas áreas de música, geografia, robótica e artes visuais, evidenciando o potencial da engenharia aliada à sustentabilidade como ferramenta educativa. O processo também favoreceu o desenvolvimento de competências técnicas, cognitivas e socioemocionais, estimulando o protagonismo juvenil, o trabalho colaborativo e a resolução de problemas reais.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="secao-impacto">
+
+    <div class="container-impacto">
+
+        <!-- TEXTO ESQUERDA -->
+        <div class="texto-impacto">
+            <p>
+                Por fim, os resultados evidenciaram o impacto positivo na percepção dos estudantes sobre sustentabilidade e responsabilidade ambiental, especialmente pela experiência prática e pelos artefatos construídos. Ao todo, cerca de 200 estudantes, participaram das atividades, demonstrando engajamento e participação ativa em todas as etapas. Conclui-se que o projeto ampliou a conscientização ambiental dos participantes, ao mesmo tempo em que fortaleceu o protagonismo estudantil, promoveu a integração efetiva entre o ensino técnico e a comunidade e possibilitou a aplicação concreta dos princípios da economia circular, evidenciando o potencial transformador da educação tecnológica aliada à sustentabilidade. Para saber mais informações, acesso o site oficial do projeto:
+            </p>
+
+<a href="https://sites.google.com/ifpa.edu.br/projetoearth/p%C3%A1gina-inicial" target="_blank" rel="noopener" class="btn-impacto">
+    Saber Mais
+</a>
+        </div>
+
+        <!-- IMAGEM DIREITA -->
+        <div class="imagem-impacto">
+            <img src="imagem11.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+  
+
+   <!-- Substitua o SVG atual por este: -->
+<div class="bloco-onda2">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+    <path fill="#fff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,180L0,180Z"></path>
+  </svg>
+</div>
+
+
+ <div class="bloco"></div>
+
+
+
+
+   <!-- FALE CONOSCO -->
+    <section class="fale-conosco">
+        <div class="fale-conosco-container">
+           
+            <img src="logoredonda.png" alt="logoredonda.png" class="fale-logo">
+             <h2><strong>FALE CONOSCO</strong></h2>
+            <p> <strong> Se você deseja solicitar os serviços do GERAE, é<br> simples: basta realizar o registro oficial pelo <br> formulário. Acesse o link abaixo e prontinho! <strong> </p>
+            <a href="https://seulink.com/formulario" class="botao-fale">
+                <i class="link-icon">🔗</i> Clique aqui
+            </a>
+            <small>*Os dados serão transferidos para o site em até 5 dias.</small>
+        </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiro">
+        <div class="parceiro-container">
+            <div class="parceiro-img">
+                <img src="comunidade.png" alt="Comunidade">
+            </div>
+  <div class="parceiro-texto">
+    <h3><strong>Gostaria de patrocinar ou apoiar a equipe?</strong></h3>
+
+    <h2><strong>SEJA UM PARCEIRO!</strong></h2>
+
+    <p>
+        Acreditamos que a inovação e a educação transformam futuros.
+        Por isso, buscamos parceiros que queiram caminhar conosco nessa missão.
+        <br>Ao patrocinar ou apoiar o GERAE, você contribui diretamente para o crescimento da equipe,
+        viabilizando projetos, oficinas e iniciativas que impactam positivamente nossa comunidade.<br>
+
+        
+    </p>
+
+    <p>
+        Seu apoio pode ser em forma de patrocínio financeiro, doações ou parcerias estratégicas.
+        <br>
+        Quer fazer parte dessa jornada? Entre em contato e descubra como apoiar nossa equipe.
+    </p>
+
+    <a class="botao-parceiro">
+        <i class="link-icon">🔗</i> Em construção
+    </a>
+</div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contatos -->
+            <div class="footer-contatos">
+                <h2><stronhg>CONTATOS</stronhg></h2>
+                <div class="contato-item">
+                    <img src="emai.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br> gerae.belem@ifpa.edu.br</strong></p>
+                </div>
+                <div class="contato-item">
+                    <img src="insta.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <a href="https://www.instagram.com/roboticagerae?igsh=Y3FhdjUwcnRwNjRm" style="color: black; text-decoration: none;">roboticagerae</a>
+                </div>
+                <div class="contato-item">
+                   <img src="tel.png" alt="Ícone do Instagram" style="width:30px; height:30px;">
+                    <p><strong> <br>GERAE</strong></p>
+                </div>
+            </div>
+
+            <!-- Créditos -->
+            <div class="footer-creditos">
+                <p><span>Idealização e Coordenação:</span><br><strong>Rejane Barros</strong></p>
+                <p><span>Design:</span><br><strong>Thaís Sousa</strong></p>
+                <p><span>Desenvolvimento e Programação:</span><br><strong>Edoni Monteiro e Leticia Pinheiro</strong></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+    <button id="btnTopo">
+  <svg width="20" height="20" viewBox="0 0 24 24">
+    <path d="M6 15l6-6 6 6" 
+          stroke="#000" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+  </svg>
+</button>
+
+
+</body>
+</html>
